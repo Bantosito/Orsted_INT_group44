@@ -1,4 +1,4 @@
-Date/Time;Active_Power;Wind_Speed;Theoretical_Power ;Wind Direction;Error;Service;FaultMsg;Status Text
+Date/Time;Active_Power;Wind_Speed;Theoretical_Power ;Wind_Direction;Error;Service;FaultMsg;Status Text
 01 01 2018 00:00;380,05;5,31;416;260;0;FALSE;FALSE;Turbine in operation
 01 01 2018 00:10;45,38;5,67;520;27;0;FALSE;TRUE;Insulation monitoring : Insulation fault Phase U2
 01 01 2018 00:20;306,38;5,22;391;273;0;TRUE;FALSE;Maintenance
@@ -8,7 +8,7 @@ Date/Time;Active_Power;Wind_Speed;Theoretical_Power ;Wind Direction;Error;Servic
 01 01 2018 01:00;447,61;5,79;557;266;0;FALSE;FALSE;Remote control PC : switched on
 01 01 2018 01:10;343;5,31;415;258;2;TRUE;FALSE;Maintenance
 01 01 2018 01:20;463,65;5,59;494;253;0;FALSE;FALSE;Generator heating : Hygrostat inverter
-01 01 2018 01:30;439,73;5,52;476;26;0;FALSE;FALSE;Calibration of  load control
+01 01 2018 01:30;439,73;5,52;476;26;0;FALSE;FALSE;Calibration of  load control 
 01 01 2018 01:40;498,18;5,72;536;252;0;FALSE;FALSE;Turbine starting
 01 01 2018 01:50;526,82;5,93;603;266;0;FALSE;FALSE;Generator heating : Hygrostat inverter
 01 01 2018 02:00;710,59;6,55;825;27;0;TRUE;FALSE;Maintenance
@@ -391,28 +391,3 @@ Date/Time;Active_Power;Wind_Speed;Theoretical_Power ;Wind Direction;Error;Servic
 05 01 2018 23:20;207;7,31;195;248;0;FALSE;FALSE;Maintenance
 05 01 2018 23:30;2,35;7,16;191;245;0;FALSE;FALSE;Remote control PC : switched off
 05 01 2018 23:40;259,89;0,71;190;245;0;FALSE;FALSE;Remote control PC : switched on
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
-;;;;;;;;
