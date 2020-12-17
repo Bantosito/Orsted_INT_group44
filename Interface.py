@@ -12,6 +12,7 @@ cmdPrompt = ">"
 fp.loadCsv()
 fp.powerDifference()
 fp.updateStatusText()
+fp.dropRowsOverFifty()
 
 def mainMenu():
     print("==========================================")        
@@ -25,7 +26,7 @@ def mainMenu():
     + "\n2: Plot the bar graph of Theoretical and Active Power"
     + "\n3: Plot a graph of Wind Speed and Active Power"
     + "\n4: Print all the information of Turbines with Error >3 and FaultMsg True\n"
-    + "\n0: Exit the application and update the 'Turbine_Output.csv' file")
+    + "\n0: Exit the application and update the 'Turbine_Output.csv' file with new data")
     print("============================================")
 
     userInput = input(cmdPrompt)
@@ -60,7 +61,10 @@ def mainMenu():
         
         
         
-print("\n======================================\n")
+print("\n======================================")
 print("       Files Loaded correctly \n")
-print("======================================\n\n")
+print("       Power_Difference collumn created \n")
+print("       Cells of turbines with errors updated\n")
+print("       Turbines with Error > 50 deleted")
+print("======================================\n")
 mainMenu()

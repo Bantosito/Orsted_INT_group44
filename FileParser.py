@@ -19,7 +19,7 @@ turbineOutput = os.path.join ( os.path.dirname(os.path.realpath(__file__)), "Tur
 #Task #1 Done
 def loadCsv():
     global df
-    df = pd.read_csv(filenameTurbine,delimiter=";",decimal =",", parse_dates = ["Date/Time"])      
+    df = pd.read_csv(filenameTurbine,delimiter=";",decimal =",", parse_dates = ["Date/Time"],error_bad_lines=False).dropna()      
     #df.info()
 #Task #2   Done
 def powerDifference(): 
@@ -89,6 +89,7 @@ def sortAndPlotWindSpeed():
 def updateStatusText():
     global df2
     global taskOutput
+    global taskEight
     taskEight = df2[df2["Error"] > 3]
     
     taskOutput = taskEight[taskEight["FaultMsg"] == True] #taskOutput outputs info for excercise 8 (should change the name)
@@ -99,7 +100,7 @@ def updateStatusText():
 
     #Task8 
 def TurbinesWithError():
-    print("Turbines with Error >3 and FaultMsg = True are:/n")
+    print("\nTurbines with Error >3 and FaultMsg = True are: \n")
     print(taskOutput) 
     print("\n\n Press any button and enter to continue")
     input(">")
@@ -108,7 +109,7 @@ def TurbinesWithError():
 def dropRowsOverFifty():
     global taskOutput
     global df2
-    taskNine = taskOutput[taskOutput["Error"] > 50]
+    taskNine = taskEight[taskEight["Error"] > 50]
     for row in taskNine.index:
         df2 = df2.drop([row])
 #Task #u3
