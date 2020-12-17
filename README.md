@@ -21,8 +21,12 @@ Program looks for file: "Turbine_Latest.csv"
 1. In the current version program automaticly drops rows containing no values
 	-In the case of Turbine_Latest.csv last 14 rows
 	
-	-Doesn't require modified file.
+	-Program doesn't require modified file.
 
 2.Turbine_Latest.csv file is not being modified at any time. All modifications are being saved in a file named "Turbine_Output.csv"
 
 -----------------------------------------------------------------------------------
+
+All files, and changes can be accesed on the project GitHub:
+
+https://github.com/Bantosito/Orsted_INT_group44.git
